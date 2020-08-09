@@ -1,0 +1,20 @@
+<ion-content>
+  
+  <div class="container">
+    <ion-card-header>
+      <a class="float-left" (click)="gotoback()"><img src="assets/images/forword.png" width="40%" class="img-fluid d-block"
+        alt="logo"></a>
+        <div class="text-white text-center">Settings</div> 
+    </ion-card-header>
+
+    <div class="box">
+              <ion-item *ngFor="let type of SettingType,let i = index">
+                      <ion-label>{{type.name}}</ion-label>
+                      <ion-toggle [(ngModel)]="type.id"></ion-toggle>
+                    </ion-item>                  
+                      
+                 
+    </div>
+
+  </div>
+</ion-content>

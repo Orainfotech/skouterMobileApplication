@@ -1,0 +1,62 @@
+<ion-content>
+  
+  <div class="container">
+    <ion-card-header>
+      <a class="float-left">    <ion-icon name="close"></ion-icon>
+      </a>
+     
+    </ion-card-header>
+
+    <div class="box">
+      <div class="bg-primary-light-2">
+        <div class="media">
+          <img src="assets/images/signupbg.png" width="45" height="45" class="rounded-circle align-self-center mr-3"
+            alt="user-img">
+          <div class="media-body inpage-profile-info">
+            <h5 class="profile-name text-primary">
+              Denise
+           </h5>
+             </div>
+        </div>
+        <div class="form-group input-group mt-4">
+          <div class="input-group-prepend">
+              <span class="input-group-text">
+              </span>
+          </div>
+          <textarea class="form-control" type="text" rows="5" 
+               placeholder="Type Here..."></textarea>
+      </div>
+      </div>
+
+      <div class="btn-group btn-round mt-4" style="width:100%">
+        <button class="custombtn-clicked"> <img src="assets/images/Uploadvideo.png" width="65" height="65" class="rounded-circle align-self-center mr-3"
+          alt="user-img"></button>
+        <button class="custombtn"> <img src="assets/images/Uploadimageicon.png" width="65" height="65" class="rounded-circle align-self-center mr-3"
+          alt="user-img"></button>
+        <button class="custombtn"> <img src="assets/images/Uploadfromgallary.png" width="65" height="65" class="rounded-circle align-self-center mr-3"
+          alt="user-img"></button>
+      </div>
+
+    </div>
+
+  </div>
+</ion-content>
+
+<ion-footer>
+  <button class="foot-btn" (click)="home()">
+    <img src="assets/images/home.png" width="40%" class="img-fluid d-block mx-auto" alt="logo">
+       
+  </button>
+    <button class="foot-btn" (click)="findpeople()"><img src="assets/images/People.png" width="40%" class="img-fluid d-block mx-auto"
+      alt="logo"></button>
+      <button class="foot-btn" (click)="upload()">
+        <img src="assets/images/upload.png" width="40%" class="img-fluid d-block mx-auto"
+        alt="logo">
+        <img src="assets/images/Line.png" width="50%" class="img-fluid d-block mx-auto"
+        alt="logo">
+</button>
+        <button class="foot-btn" ><img src="assets/images/Insight.png" width="40%" class="img-fluid d-block mx-auto"
+          alt="logo"></button>
+          <button class="foot-btn" (click)="search()"><img src="assets/images/Search.png" width="40%" class="img-fluid d-block mx-auto"
+            alt="logo"></button>
+</ion-footer>

@@ -1,0 +1,36 @@
+.card {
+    position: fixed;
+    display: -ms-flexbox;
+    /* display: flex; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 10px;
+    width: 92%;
+}
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #55b730;
+    border-radius: 0;
+}
+.login-wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("..//..//..//assets/images/signupbg.png");
+    opacity: 0.8;
+}
+.a{
+text-decoration: none;
+color: #55b730;
+}

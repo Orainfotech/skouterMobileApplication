@@ -1,0 +1,39 @@
+<ion-content>
+  
+  <div class="container">
+    <ion-card-header>
+        <div class="text-white text-center">Studios</div> 
+    </ion-card-header>
+
+    <div class="box">                 
+      <h6>Nearby Studios</h6>
+      <hr>
+      <div *ngFor="let type of studiolist,let i = index">
+      <div>
+      <a class="float-left"><h6>{{type.name}}</h6></a>
+      
+        <a class="float-right text-center"><img src="assets/images/option.png" width="40%" class="img-fluid d-block"
+          alt="logo"></a>
+        </div>
+        
+        </div>
+          
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <button class="foot-btn" (click)="gotohome()"><img src="assets/images/home.png" width="40%" class="img-fluid d-block mx-auto"
+    alt="logo"></button>
+    <button class="foot-btn" (click)="gotopeople()"><img src="assets/images/People.png" width="40%" class="img-fluid d-block mx-auto"
+      alt="logo"></button>
+      <button class="foot-btn" ><img src="assets/images/upload.png" width="40%" class="img-fluid d-block mx-auto"
+        alt="logo"></button>
+        <button class="foot-btn" ><img src="assets/images/Insight.png" width="40%" class="img-fluid d-block mx-auto"
+          alt="logo"></button>
+          <button class="foot-btn" >
+            <img src="assets/images/Search_selected.png" width="40%" class="img-fluid d-block mx-auto"
+            alt="logo">
+            <img src="assets/images/Line.png" width="50%" class="img-fluid d-block mx-auto"
+            alt="logo">
+          </button>
+</ion-footer>

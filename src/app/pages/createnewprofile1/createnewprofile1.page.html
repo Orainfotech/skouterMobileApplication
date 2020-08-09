@@ -1,0 +1,25 @@
+<ion-content>
+  
+  <div class="container">
+    <ion-card-header>
+      <a class="float-left"><img src="assets/images/Profile.png" width="40%" class="img-fluid d-block"
+        alt="logo"></a>
+      <a class="float-right" (click)="gotosetting()"><img src="assets/images/settings.png" width="50%" class="img-fluid d-block"
+          alt="logo"></a>
+        <div class="text-white text-center">Create New Account</div> 
+    </ion-card-header>
+
+    <div class="box">
+              <ion-item *ngFor="let type of ProfileType,let i = index">
+                      <ion-label>{{type.name}}</ion-label>
+                      <ion-checkbox slot="end" value="type.id"></ion-checkbox>
+                    </ion-item>                  
+                      
+                  <div class="center">
+                    <button class="btn btn-block mt-2 mb-4" (click)="Next()"><i
+                      class="fa fa-lock align-middle mr-1"></i> Done</button>                
+      </div>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "Skout",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
